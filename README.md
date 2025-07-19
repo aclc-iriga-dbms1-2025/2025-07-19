@@ -11,7 +11,7 @@ The easiest way to get MySQL is by using a software called XAMPP.
 
 ### Installing XAMPP on Windows
 1. Download XAMPP for Windows from [apachefriends.org/download.html](https://www.apachefriends.org/download.html).
-2. Install the downloaded file. When the XAMPP Control Panel appears, do not launch it yet.
+2. Install the downloaded file. When the installation is done, just close the Finish dialog - do not launch the XAMPP Control Panel yet.
 
 ### Setting Up MySQL as a Service
 1. Open the installed **XAMPP Control Panel** as **Administrator**.

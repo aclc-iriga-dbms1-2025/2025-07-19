@@ -52,7 +52,6 @@ CREATE DATABASE mobile_wallet;
 CREATE DATABASE money_lending;
 ```
 
-
 ### 2. DROP DATABASE
 Deletes a database permanently. _(Not discussed in class)_
 
@@ -68,7 +67,6 @@ DROP DATABASE databasename;
 DROP DATABASE mobile_wallet;
 ```
 
-
 ### 3. SHOW DATABASES
 Shows all databases on the server.
 
@@ -76,7 +74,6 @@ Shows all databases on the server.
 ```sql
 SHOW DATABASES;
 ```
-
 
 ### 4. USE
 Selects which database to work with.
@@ -173,8 +170,26 @@ CREATE TABLE `loans` (
 
 - **ON UPDATE CASCADE** means that if the `id` in `offers` or `customers` is updated, the related `offer_id` or `customer_id` in the loans table will also be updated automatically.
 
+### 2. DESCRIBE
+Used to show the structure of a table - including column names, data types, and other details.
 
-### 2. INSERT INTO
+**Syntax:**
+```sql
+DESCRIBE table_name;
+```
+
+**Examples:**
+```sql
+DESCRIBE `offers`;
+
+
+DESCRIBE `customers`;
+
+
+DESCRIBE `loans`;
+```
+
+### 3. INSERT INTO
 Adds new data into a table.
 
 **Syntax:**
@@ -232,7 +247,7 @@ _Otherwise, you'll get an error like:_
 Cannot add or update a child row: a foreign key constraint fails.
 ```
 
-### 3. SELECT
+### 4. SELECT
 Used to get data from a database.
 
 **Syntax:**
@@ -279,7 +294,7 @@ SELECT * FROM `loans`
 WHERE `offer_id` = 1;
 ```
 
-### 4. UPDATE
+### 5. UPDATE
 Used to change existing data in a table.
 
 **Syntax:**
@@ -307,8 +322,7 @@ SET `customer_id` = 2
 WHERE `id` = 2;
 ```
 
-
-### 5. DELETE
+### 6. DELETE
 Used to remove data from a table.
 
 **Syntax:**
@@ -332,8 +346,7 @@ DELETE FROM `loans`
 WHERE `id` = 2;
 ```
 
-
-### 6. DROP TABLE
+### 7. DROP TABLE
 Used to delete a table and all its data from the database. _(Not discussed in class)_
 
 **Syntax:**
